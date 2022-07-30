@@ -1,0 +1,122 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Cream: hsl(30, 38%, 92%);
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Dark-cyan-hover: hsl(158, 36%, 25%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Cream);
+    padding: 14px;
+}
+
+.card-container {
+    margin: 16px auto;
+    max-width: 375px;
+    background-color: var(--White);
+    border-radius: 10px;
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 18px;
+}
+
+.card-body .category{
+    letter-spacing: 6px;
+}
+
+.card-body h1,span,p {
+    margin-top: 14px;
+    color: var(--Dark-grayish-blue);
+}
+
+.card-body h1 {
+    color: var(--Very-dark-blue);
+}
+
+.card-body p {
+    font-size: 14px;
+}
+
+.card-footer {
+    font-family: 'Fraunces', serif;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    color: var(--Dark-cyan);
+    font-size: x-large;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.prev-price {
+    margin-left: 12px;
+    color: var(--Dark-grayish-blue);
+}
+
+.card-footer #add-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--Dark-cyan);
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    margin-top: 16px;
+    color: var(--White);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card-footer #add-button:hover {
+    background-color: var(--Dark-cyan-hover);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 980px) {
+    .card-container {
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image{
+        width: 290px;
+        height: auto;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+}
+
